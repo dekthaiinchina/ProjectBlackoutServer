@@ -29,7 +29,7 @@ To build and run this server, you'll need the following software installed:
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/dekthaiinchina/ProjectBlackoutServerV368.git
+    git clone https://github.com/dekthaiinchina/ProjectBlackoutServerV324.git
     ```
 
 2.  **Set up the database**:
