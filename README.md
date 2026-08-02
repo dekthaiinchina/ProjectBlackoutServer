@@ -1,4 +1,4 @@
-# Point Blank Server
+# Project Blackout Server
 
 This is a private server project for the classic FPS game, Point Blank. This repository contains the server-side source code, database scripts, and tools necessary to run a custom server.
 
@@ -29,7 +29,7 @@ To build and run this server, you'll need the following software installed:
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/dekthaiinchina/PointBlankServer.git
+    git clone https://github.com/dekthaiinchina/ProjectBlackoutServer.git
     ```
 
 2.  **Set up the database**:
