@@ -1,7 +1,0 @@
-C:\Users\dekthaiinchina\Documents\Visual Studio 2022 Preview\Projects\PointBlankServer\ALLDebug\PointBlank.Core.dll
-C:\Users\dekthaiinchina\Documents\Visual Studio 2022 Preview\Projects\PointBlankServer\ALLDebug\PointBlank.Core.pdb
-C:\Users\dekthaiinchina\Documents\Visual Studio 2022 Preview\Projects\PointBlankServer\PointBlank.Core\obj\Debug\PointBlank.Core.csproj.AssemblyReference.cache
-C:\Users\dekthaiinchina\Documents\Visual Studio 2022 Preview\Projects\PointBlankServer\PointBlank.Core\obj\Debug\PointBlank.Core.csproj.CoreCompileInputs.cache
-C:\Users\dekthaiinchina\Documents\Visual Studio 2022 Preview\Projects\PointBlankServer\PointBlank.Core\obj\Debug\PointBla.63018276.Up2Date
-C:\Users\dekthaiinchina\Documents\Visual Studio 2022 Preview\Projects\PointBlankServer\PointBlank.Core\obj\Debug\PointBlank.Core.dll
-C:\Users\dekthaiinchina\Documents\Visual Studio 2022 Preview\Projects\PointBlankServer\PointBlank.Core\obj\Debug\PointBlank.Core.pdb
