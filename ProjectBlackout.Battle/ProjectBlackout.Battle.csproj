@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FB690DC-D3B1-4760-9465-8D9CBCE16F2B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>BattleServer</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BattleServer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\build\dbg\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\build\rel\</OutputPath>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Data\AllUtils.cs" />
+    <Compile Include="Data\Enums\ACTION_STATE.cs" />
+    <Compile Include="Data\Enums\BOMB_FLAG.cs" />
+    <Compile Include="Data\Enums\CHARA_DEATH.cs" />
+    <Compile Include="Data\Enums\HIT_TYPE.cs" />
+    <Compile Include="Data\Enums\HIT_CHARA_PART.cs" />
+    <Compile Include="Data\Enums\MAP_STATE_ID.cs" />
+    <Compile Include="Data\Enums\OBJECT_TYPE.cs" />
+    <Compile Include="Data\Enums\CHARA_MOVES.cs" />
+    <Compile Include="Data\Enums\ROOM_STATE_TYPE.cs" />
+    <Compile Include="Data\Enums\WEAPON_SYNC_TYPE.cs" />
+    <Compile Include="Data\Items\Item.cs" />
+    <Compile Include="Data\Items\ItemManager.cs" />
+    <Compile Include="Data\Models\AnimModel.cs" />
+    <Compile Include="Data\Models\AssistModel.cs" />
+    <Compile Include="Data\Models\BombPosition.cs" />
+    <Compile Include="Data\Models\CharaModel.cs" />
+    <Compile Include="Data\Models\DeffectModel.cs" />
+    <Compile Include="Data\Models\Event\ActionObjectInfo.cs" />
+    <Compile Include="Data\Models\Event\ActionStateInfo.cs" />
+    <Compile Include="Data\Models\Event\AnimationInfo.cs" />
+    <Compile Include="Data\Models\Event\FireNHitDataObjectInfo.cs" />
+    <Compile Include="Data\Models\MapModel.cs" />
+    <Compile Include="Data\Models\ObjectModel.cs" />
+    <Compile Include="Data\Models\SubHead\ObjectAnimInfo.cs" />
+    <Compile Include="Data\Models\SubHead\ControledInfo.cs" />
+    <Compile Include="Data\Models\DeathServerData.cs" />
+    <Compile Include="Data\Models\Event\DropWeaponInfo.cs" />
+    <Compile Include="Data\Models\Event\FireDataInfo.cs" />
+    <Compile Include="Data\Models\Event\GrenadeHitInfo.cs" />
+    <Compile Include="Data\Models\Event\FireDataObjectInfo.cs" />
+    <Compile Include="Data\Models\GameServerModel.cs" />
+    <Compile Include="Data\Models\SubHead\DropedWeaponInfo.cs" />
+    <Compile Include="Data\Models\SubHead\ObjectStaticInfo.cs" />
+    <Compile Include="Data\Models\SubHead\StageStaticInfo.cs" />
+    <Compile Include="Data\Models\SubHead\StageAnimInfo.cs" />
+    <Compile Include="Data\Models\Event\WeaponClient.cs" />
+    <Compile Include="Data\Models\SubHead\GrenadeInfo.cs" />
+    <Compile Include="Data\Models\Event\CharaFireNHitDataInfo.cs" />
+    <Compile Include="Data\Models\Event\HitDataInfo.cs" />
+    <Compile Include="Data\Models\Event\MissionDataInfo.cs" />
+    <Compile Include="Data\Models\ObjectInfo.cs" />
+    <Compile Include="Data\Enums\UDP_SUB_HEAD.cs" />
+    <Compile Include="Data\Enums\CLASS_TYPE.cs" />
+    <Compile Include="Data\Models\ObjectHitInfo.cs" />
+    <Compile Include="Data\Models\ActionModel.cs" />
+    <Compile Include="Data\Models\PacketModel.cs" />
+    <Compile Include="Data\Models\Event\PosRotationInfo.cs" />
+    <Compile Include="Data\Models\Event\RadioChatInfo.cs" />
+    <Compile Include="Data\Models\Event\SuicideInfo.cs" />
+    <Compile Include="Data\Models\Event\UseObjectInfo.cs" />
+    <Compile Include="Data\Models\Event\WeaponHost.cs" />
+    <Compile Include="Data\Models\Event\WeaponRecoilInfo.cs" />
+    <Compile Include="Data\Models\Event\WeaponSyncInfo.cs" />
+    <Compile Include="Data\Xml\MeleeExceptionsXml.cs" />
+    <Compile Include="Data\Xml\CharaXml.cs" />
+    <Compile Include="Data\Xml\MapXml.cs" />
+    <Compile Include="Data\Xml\ServersXml.cs" />
+    <Compile Include="Network\Actions\Damage\DamageManager.cs" />
+    <Compile Include="Network\Actions\Event\MissionData.cs" />
+    <Compile Include="Network\Actions\Event\FireNHitDataOnObject.cs" />
+    <Compile Include="Network\Actions\Event\WeaponRecoil.cs" />
+    <Compile Include="Network\Actions\Event\CharaFireNHitData.cs" />
+    <Compile Include="Network\Actions\Event\ActionForObjectSync.cs" />
+    <Compile Include="Network\Actions\Event\ActionState.cs" />
+    <Compile Include="Network\Actions\Event\GetWeaponForClient.cs" />
+    <Compile Include="Network\Actions\Event\HpSync.cs" />
+    <Compile Include="Network\Actions\Event\GetWeaponForHost.cs" />
+    <Compile Include="Network\Actions\Event\Animation.cs" />
+    <Compile Include="Network\Actions\Event\HitData.cs" />
+    <Compile Include="Network\Actions\Event\RadioChat.cs" />
+    <Compile Include="Network\Actions\Event\DropWeapon.cs" />
+    <Compile Include="Network\Actions\Event\PosRotation.cs" />
+    <Compile Include="Network\Actions\Event\Suicide.cs" />
+    <Compile Include="Network\Actions\Event\FireData.cs" />
+    <Compile Include="Network\Actions\Event\WeaponSync.cs" />
+    <Compile Include="Network\Actions\Event\GrenadeHit.cs" />
+    <Compile Include="Network\Actions\Event\FireDataOnObject.cs" />
+    <Compile Include="Network\Actions\Event\UseObject.cs" />
+    <Compile Include="Network\Actions\SubHead\GrenadeSync.cs" />
+    <Compile Include="Network\Packets\PROTOCOL_BOTS_ACTION.cs" />
+    <Compile Include="Network\Packets\PROTOCOL_EVENTS_ACTION.cs" />
+    <Compile Include="Network\Actions\SubHead\StageObjAnim.cs" />
+    <Compile Include="Network\Actions\SubHead\ControledObj.cs" />
+    <Compile Include="Network\Actions\SubHead\ObjectStatic.cs" />
+    <Compile Include="Network\Actions\SubHead\ObjectAnim.cs" />
+    <Compile Include="Network\Actions\SubHead\StageInfoObjStatic.cs" />
+    <Compile Include="Network\Actions\SubHead\DropedWeapon.cs" />
+    <Compile Include="Network\BattleManager.cs" />
+    <Compile Include="Data\Sync\BattleSync.cs" />
+    <Compile Include="Network\Packets\PROTOCOL_CONNECT.cs" />
+    <Compile Include="Data\Sync\Client\RemovePlayerSync.cs" />
+    <Compile Include="Data\Sync\Client\RespawnSync.cs" />
+    <Compile Include="Data\Sql\SqlConnection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Reference Include="CrashReporter.NET, Version=1.6.0.0, Culture=neutral, PublicKeyToken=7828e0fd88cab698, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrashReporter.NET.Official.1.6.0\lib\net462\CrashReporter.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lidgren.Network.1.0.2\lib\net451\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.3\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.6.0.0\lib\net462\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=9.0.0.3, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.9.0.3\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Npgsql, Version=8.0.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.8.0.7\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.4.2.0\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Compile Include="Data\Configs\BattleConfig.cs" />
+    <Compile Include="Data\ConfigFile.cs" />
+    <Compile Include="Data\Enums\UDP_GAME_EVENTS.cs" />
+    <Compile Include="Data\Models\Player.cs" />
+    <Compile Include="Data\Models\Room.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Network\BattleHandler.cs" />
+    <Compile Include="Network\ReceivePacket.cs" />
+    <Compile Include="Network\RoomsManager.cs" />
+    <Compile Include="Network\SendPacket.cs" />
+    <Compile Include="Program.cs" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=9.0.0.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.9.0.3\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.9.0.3\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.9.0.3\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.2\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.1\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.9.0.3\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.9.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=9.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.9.0.3\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.2\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Sync\Server\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectBlackout.Core\ProjectBlackout.Core.csproj">
+      <Project>{9f13f1fc-bdd2-40cf-a7bf-7fe013fd1e5f}</Project>
+      <Name>ProjectBlackout.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
+  </Target>
+</Project>

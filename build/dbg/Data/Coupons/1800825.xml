@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<List Count="16"> ;Spy Deluxe Box
+<Item Index="0" Id="103238" Count="2592000" Equip="1" Percent="50" Special="false"/> ;AUG A3 Spy Deluxe 30d
+<Item Index="3" Id="202077" Count="2592000" Equip="1" Percent="10" Special="false"/> ;MK23 Spy Deluxe 30d
+<Item Index="6" Id="301114" Count="2592000" Equip="1" Percent="40" Special="false"/> ;Balistic Knife Spy 30d
+<Item Index="9" Id="104244" Count="2592000" Equip="1" Percent="50" Special="false"/> ; P90 M. C. Spy Deluxe 30d
+<Item Index="10" Id="105136" Count="2592000" Equip="1" Percent="80" Special="false"/> ; DSR-1 Spy Deluxe 30d
+<Item Index="11" Id="800308" Count="2592000" Equip="1" Percent="80" Special="false"/> ;Mask Deluxe 30d
+</List>

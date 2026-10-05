@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<List Count="17"> ;Spy Basic Box
+<Item Index="0" Id="104240" Count="2592000" Equip="1" Percent="40" Special="false"/> ;P90 MCS Spy 30d
+<Item Index="1" Id="104240" Count="604800" Equip="1" Percent="30" Special="false"/> ;P90 MCS Spy 7d
+<Item Index="2" Id="104240" Count="86400" Equip="1" Percent="50" Special="false"/> ;P90 MCS Spy 1d
+<Item Index="3" Id="105133" Count="2592000" Equip="1" Percent="30" Special="false"/> ;DSR1 Spy 30d
+<Item Index="4" Id="105133" Count="604800" Equip="1" Percent="30" Special="false"/> ;DSR1 Spy 7d
+<Item Index="5" Id="105133" Count="86400" Equip="1" Percent="60" Special="false"/> ;DSR1 Spy 1d
+<Item Index="6" Id="800304" Count="2592000" Equip="1" Percent="10" Special="false"/> ;Маска Spy 30d
+<Item Index="7" Id="800304" Count="604800" Equip="1" Percent="35" Special="false"/> ;Маска Spy 7d
+<Item Index="8" Id="800304" Count="86400" Equip="1" Percent="30" Special="false"/> ;Маска Spy 1d
+<Item Index="9" Id="301049" Count="604800" Equip="1" Percent="50" Special="false"/> ;Arab Knife Esport 7d
+<Item Index="10" Id="301049" Count="86400" Equip="1" Percent="80" Special="false"/> ;Arab Knife Esport 1d
+<Item Index="11" Id="103162" Count="604800" Equip="1" Percent="20" Special="false"/> ;TAR21 Индиго 7d
+<Item Index="12" Id="103162" Count="86400" Equip="1" Percent="35" Special="false"/> ;TAR21 Индиго 1d
+<Item Index="13" Id="1701044" Count="7" Equip="1" Percent="50" Special="false"/> ;Тяжелый броник 1d x7
+<Item Index="14" Id="1707027" Count="1" Equip="1" Percent="45" Special="false"/> ;Быстрая перезарядка 7d
+<Item Index="15" Id="1707031" Count="1" Equip="1" Percent="49" Special="false"/> ;Кумулятивные патроны 7d
+<Item Index="16" Id="1707026" Count="1" Equip="1" Percent="50" Special="false"/> ;Быстрая смена оружия 7d
+</List>

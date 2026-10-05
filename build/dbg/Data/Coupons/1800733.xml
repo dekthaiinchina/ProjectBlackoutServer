@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<List Count="16"> ;Spy Plus Box
+<Item Index="0" Id="103233" Count="2592000" Equip="1" Percent="50" Special="false"/> ;AUG A3 Spy 30d
+<Item Index="1" Id="103233" Count="604800" Equip="1" Percent="10" Special="false"/> ;AUG A3 Spy 7d
+<Item Index="2" Id="103233" Count="86400" Equip="1" Percent="50" Special="false"/> ;AUG A3 Spy 1d
+<Item Index="3" Id="202075" Count="2592000" Equip="1" Percent="10" Special="false"/> ;MK23 Spy 30d
+<Item Index="4" Id="202075" Count="604800" Equip="1" Percent="30" Special="false"/> ;MK23 Spy 7d
+<Item Index="5" Id="202075" Count="86400" Equip="1" Percent="80" Special="false"/> ;MK23 Spy 1d
+<Item Index="6" Id="301110" Count="2592000" Equip="1" Percent="40" Special="false"/> ;Balistic Knife Spy 30d
+<Item Index="7" Id="301110" Count="604800" Equip="1" Percent="50" Special="false"/> ;Balistic Knife Spy 7d
+<Item Index="8" Id="301110" Count="86400" Equip="1" Percent="60" Special="false"/> ;Balistic Knife Spy 1d
+<Item Index="9" Id="800271" Count="604800" Equip="1" Percent="50" Special="false"/> ;Маска Indigo 7d
+<Item Index="10" Id="800271" Count="86400" Equip="1" Percent="80" Special="false"/> ;Маска Indigo 1d
+<Item Index="11" Id="104149" Count="604800" Equip="1" Percent="80" Special="false"/> ;Kriss SV Indigo 7d
+<Item Index="12" Id="104149" Count="86400" Equip="1" Percent="80" Special="false"/> ;Kriss SV Indigo 1d
+<Item Index="13" Id="601038" Count="259200" Equip="1" Percent="80" Special="false"/> ;Black Viper 3d
+<Item Index="14" Id="602039" Count="259200" Equip="1" Percent="80" Special="false"/> ;Chameleon 3d
+<Item Index="15" Id="1707008" Count="1" Equip="1" Percent="60" Special="false"/> ;Ammo Plus 7d
+</List>
